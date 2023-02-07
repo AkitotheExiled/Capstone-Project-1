@@ -1,0 +1,87 @@
+/* Navbar */
+
+.nav {
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/* dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.nav a:hover .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr 1fr;
+    grid-template-rows: 1.2fr 1.4fr 0.2fr 1.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header blank2 image3"
+      "image1 image2 image3"
+      "blank blank blank"
+      "image4 image5 image6";
+  }
+  .blank { grid-area: blank; }
+  .header { grid-area: header; }
+  .blank2 { grid-area: blank2; }
+  .image1 { grid-area: image1; }
+  .image2 { grid-area: image2; }
+  .image3 { grid-area: image3; }
+  .image4 { grid-area: image4; }
+  .image5 { grid-area: image5; }
+  .image6 { grid-area: image6; }
