@@ -4,13 +4,13 @@
 :root {
     --sat-grey-900: hsl(281, 15%, 15%);
     --sat-grey-800: hsl(281, 12%, 29%);
-    --sat-grey-700: hsl(281, 12%, 49%);
-    --sat-grey-600: hsl(281, 12%, 54%);
-    --sat-grey-500: hsl(281, 21%, 62%);
-    --sat-grey-400: hsl(281, 21%, 72%);
-    --sat-grey-300: hsl(281, 21%, 82%);
-    --sat-grey-200: hsl(281, 21%, 89%);
-    --sat-grey-100: hsl(281, 21%, 94%);
+    --sat-grey-700: hsl(281, 10%, 49%);
+    --sat-grey-600: hsl(282, 8%, 56%);
+    --sat-grey-500: hsl(281, 6%, 62%);
+    --sat-grey-400: hsl(281, 5%, 72%);
+    --sat-grey-300: hsl(281, 4%, 82%);
+    --sat-grey-200: hsl(281, 2%, 89%);
+    --sat-grey-100: hsl(281, 1%, 94%);
 
     --prim-color-700: hsl(288,63%, 16%);
     --prim-color-600: hsl(288,60%, 25%);
@@ -206,10 +206,18 @@ body {
     position: absolute;
     background-color: white;
     min-width: 160px;
+    max-width: 272px;
+    height: 100vh;
+    top: 0;
+    width: 75%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
+.list__svg {
+    width: 24px;
+    height: 24px;
+}
 .dropdown__list a {
     float: none;
     color: black;
@@ -294,16 +302,20 @@ body {
 .list__svgitem {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    margin-bottom: 8px;
+
 }
 .list__svgitem svg{
     width: 24px;
     height: 24px;
+    color: var(--sat-grey-600);
     margin-right: 5px;
 }
 .list__svgitem a {
+    font-size: 16px;
+    color: var(--sat-grey-700);
     text-decoration: none;
-    color: black;
 
 }
 .item {
@@ -315,7 +327,7 @@ body {
     display:flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 24px;
+    margin-bottom: 4px;
 }
 
 .item div h2 {
