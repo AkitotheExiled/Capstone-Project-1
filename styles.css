@@ -106,6 +106,7 @@ html {
 .button--state-danger {
     background-color: var(--ac1-color-500);
     color: var(--ac1-color-700);
+    border: 2px solid var(--ac1-color-500);
 }
 
 
@@ -113,6 +114,10 @@ html {
     color: lightgrey;
 }
 
+
+.no--bg-color {
+    background-color: transparent;
+}
 
 
 /*------------------------------------*\
@@ -229,7 +234,7 @@ body {
     display: none;
     flex-direction:column;
     position: absolute;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: var(--sat-grey-900);
     min-width: 160px;
     max-width: 272px;
@@ -240,6 +245,16 @@ body {
     z-index: 1;
 }
 
+.dropdown__background {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.096);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
 .list__svg {
     width: 24px;
     height: 24px;
@@ -264,6 +279,9 @@ body {
 .nav__dropdown:hover .dropdown__list {
     display: flex;
 }
+.nav__dropdown:hover .dropdown__background {
+    display: flex;
+}
 .dropdownlist__item {
     margin-top: auto;
 }
@@ -275,6 +293,7 @@ body {
 /* Bottom Nav for MOBILE ONLY */
 
 .bottom_nav {
+    display: none;
     bottom: 0;
     max-width: 720px;
     width: 100%;
