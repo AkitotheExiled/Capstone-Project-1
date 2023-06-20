@@ -276,12 +276,18 @@ body {
 
 }
 
-.nav__dropdown:hover, .nav__dropdown:active .dropdown__list {
+.nav__dropdown:hover .dropdown__list {
+    display: flex;
+}
+.nav__dropdown:active .dropdown__list {
     display: flex;
 }
 
+.nav__dropdown:hover .dropdown__background {
+    display: flex;
+}
 
-.nav__dropdown:hover, .nav__dropdown:active .dropdown__background {
+.nav__dropdown:active .dropdown__background {
     display: flex;
 }
 .dropdownlist__item {
