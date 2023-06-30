@@ -109,6 +109,12 @@ html {
     border: 2px solid var(--ac1-color-500);
 }
 
+.button--state-danger-muted {
+    background-color: var(--sat-grey-500);
+    color: var(--sat-grey-700);
+    border: 2px solid var(--ac1-grey-500);
+}
+
 
 .neutral--txt-color {
     color: var(--sat-grey-800);
