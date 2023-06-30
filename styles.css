@@ -110,8 +110,8 @@ html {
 }
 
 
-.tertiary-button {
-    color: lightgrey;
+.neutral--txt-color {
+    color: var(--sat-grey-800);
 }
 
 .prim--bg-color {
@@ -367,13 +367,16 @@ body {
 
 .hull__item:first-child .item__title h2 {color: var(--prim-color-200); }
 .hull__item:first-child .item__title .list__svgitem svg { color: var(--prim-color-200); }
-.hull__item:first-child, .item__title .list__svgitem a { color: var(--prim-color-100); }
+.hull__item:first-child a { color: var(--prim-color-100); }
 .hull__item:first-child .item p { color: var(--prim-color-300); }
+
+
 
 .hull__item:last-child .item__title h2 {color: var(--prim-color-200); }
 .hull__item:last-child .item__title .list__svgitem svg { color: var(--prim-color-200); }
-.hull__item:last-child, .item__title .list__svgitem a { color: var(--prim-color-100); }
+.hull__item:last-child  a { color: var(--prim-color-100); }
 .hull__item:last-child .item p { color: var(--prim-color-300); }
+
 
 .list__svgitem {
     display: flex;
