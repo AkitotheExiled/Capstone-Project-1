@@ -1,3 +1,15 @@
+
+function toggleDiv(classDiv1, classDiv2) {
+    let divToClose = document.querySelector(classDiv1);
+    divToClose.classList.toggle("hide");
+
+    let divToClose2 = document.querySelector(classDiv2);
+    divToClose.classList.toggle("hide");
+
+}
+
+
+/*
 var delta = null;
 var start = null;
 var end = null;
@@ -41,3 +53,18 @@ window.addEventListener("scrollend", (event) => {
 })
 
 
+
+function toggleMenu() {
+    let bottomnav = document.querySelector(".bottom_nav");
+    if (this.classList.contains("menu-active")) {
+        this.classList.remove("menu-active");
+        bottomnav.style.display = "block";
+    } else {
+        this.classList.add("menu-active");
+        bottomnav.style.display = "none";
+    }
+}
+
+
+
+*/
